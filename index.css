@@ -1,0 +1,55 @@
+body{
+    background-color: black;
+}
+.container{
+    margin: 90px 0 0 30rem;
+    border: 2px solid white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px white, 0 0 5px white
+
+}
+.inp{
+    margin: 0 20px 30px 0;
+}
+.inp input {
+  width: 100%;      /* parent div (70px) ke andar fit hoga */
+  height: 50px;     /* height set kar lo */
+  font-size: 18px;  /* text bada aur clear */
+  text-align: right; /* calculator input usually right aligned hota hai */
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(56, 54, 54);
+   box-shadow: 0 0 10px white;
+   font-size: 30px;
+   color: aliceblue;
+}
+
+.btn {
+    display: grid;
+    grid-template-columns: repeat(4 , 60px);
+    gap: 20px;
+}
+.btn button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* perfect circle */
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    cursor: pointer;
+    border: none;
+    background-color: #222;   /* dark button */
+    color: white;
+
+    /* shadow / glow */
+    box-shadow: 0 0 5px white, 0 0 5px white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+.btn button:hover{
+  transform: scale(1.1); /* thoda bada hoga */
+}
